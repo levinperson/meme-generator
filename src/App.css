@@ -2,37 +2,96 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
+  /* padding-top: 20px; */
+  /* padding-left: 20px; */
+  /* padding-right: 40px; */
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#meme-icon {
+  width: 50px;
+  /* height: 50px; */
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+main {
+  padding: 36px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form-input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form-button {
+  grid-column: -1 / 1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.meme-image {
+  grid-column: -1 / 1;
+  width: 100%;
+}
+
+.meme-text-top {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  right: 0;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+}
+
+.meme-text-bottom {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
 }
